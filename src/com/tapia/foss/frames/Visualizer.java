@@ -210,8 +210,14 @@ public class Visualizer extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Please enter a value to be removed");
             else
             {
-                if(!structure.remove(Integer.parseInt(input)))
-                    JOptionPane.showMessageDialog(this, "Unable to find/delete "+input);
+                
+                if (this.tryParsing(input)) {
+                    if(!structure.remove(Integer.parseInt(input))) {
+                        JOptionPane.showMessageDialog(this, "Unable to find/delete "+input);
+                    }
+                } else {
+                    return;
+                }
             
                 display();
             }
@@ -232,7 +238,13 @@ public class Visualizer extends javax.swing.JFrame {
         }
         else
         {
-            structure.add(Integer.parseInt(input));
+            
+            if (this.tryParsing(input)) {
+                structure.add(Integer.parseInt(input));
+            } else {
+                return;
+            }
+            
             display();
         }
     }//GEN-LAST:event_jButtonAddActionPerformed
@@ -259,6 +271,21 @@ public class Visualizer extends javax.swing.JFrame {
         jTextAreaDisplay.setText(displayString);
         jPanelDisplayArea.validate();
 
+    }
+    
+    /*
+     * Tries parsing the input string
+     *
+     * Returns false if the parsing fails and displays a GUI window to notify the user.
+     */
+    private boolean tryParsing(String input) {
+        try {
+            Integer.parseInt(input);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Please enter an integer value");
+            return false;
+        }
+        return true; // Return true if the parsing succeeded
     }
     
     // Data Structure
