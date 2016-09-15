@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.ghc.foss.frames;
+package com.tapia.foss.frames;
 
 import com.tapia.foss.ds.List;
 import com.tapia.foss.ds.BinaryTree;
