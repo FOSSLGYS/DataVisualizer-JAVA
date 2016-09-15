@@ -65,7 +65,7 @@ public class Stack implements DataStructure {
     public Boolean remove(Integer ignore)
     {
         // Nothing to remove from the stack
-        if (stack.size() <= 0) {
+        if (stack.isEmpty()) {
             return false;
         } else {
             // We can remove stuff from the stack
