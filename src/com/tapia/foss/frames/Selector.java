@@ -234,8 +234,8 @@ public class Selector extends javax.swing.JFrame {
     //Constalts
     private final String IMAGE_PATH = "/com/tapia/foss/images/";
     private final String STACK_IMAGE ="stack.png";
-    private final String QUEUE_IMAGE ="heap.png";
-    private final String HEAP_IMAGE ="stack.png";
+    private final String QUEUE_IMAGE ="queue.png";
+    private final String HEAP_IMAGE ="heap.png";
     private final String TREE_IMAGE ="tree.png";
     private final String LIST_IMAGE="list.png";
     private final Integer IMG_DIM = 175;
