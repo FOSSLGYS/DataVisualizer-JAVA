@@ -16,7 +16,11 @@
  */
 package com.ghc.foss.frames;
 
-import com.ghc.foss.ds.*;
+import com.tapia.foss.ds.List;
+import com.tapia.foss.ds.BinaryTree;
+import com.tapia.foss.ds.Queue;
+import com.tapia.foss.ds.BinaryHeap;
+import com.tapia.foss.ds.Stack;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.*;

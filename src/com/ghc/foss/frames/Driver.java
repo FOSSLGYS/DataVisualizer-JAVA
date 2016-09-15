@@ -23,7 +23,7 @@ package com.ghc.foss.frames;
 public class Driver {
     public static void main(String [] args)
     {
-        System.out.println("Hello!");
+        System.out.println("Hello Tapia 2016 Attendees!");
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package com.ghc.foss.frames;
-import com.ghc.foss.ds.*;
+import com.tapia.foss.ds.DataStructure;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 /**
