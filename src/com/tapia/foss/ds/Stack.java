@@ -68,6 +68,7 @@ public class Stack implements DataStructure {
         if (stack.size() <= 0) {
             return false;
         } else {
+            // We can remove stuff from the stack
             stack.remove(stack.get(size()-1));
             return true;
         }
