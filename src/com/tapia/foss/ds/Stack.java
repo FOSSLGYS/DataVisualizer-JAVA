@@ -64,8 +64,13 @@ public class Stack implements DataStructure {
     @Override
     public Boolean remove(Integer ignore)
     {
-        stack.remove(stack.get(size()-1));
-        return true;
+        // Nothing to remove from the stack
+        if (stack.size() <= 0) {
+            return false;
+        } else {
+            stack.remove(stack.get(size()-1));
+            return true;
+        }
     }
     
     /**
