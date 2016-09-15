@@ -57,7 +57,7 @@ public class Stack implements DataStructure {
     }
     
     /**
-     * POP method for Stack
+     * POP method for Stack 
      * @param ignore, required for consistency across data structures, unused here
      * @return a Boolean value to indicate whether the removal was successful or not
      */
@@ -73,6 +73,7 @@ public class Stack implements DataStructure {
             return true;
         }
     }
+    
     
     /**
     *EMPTY the Stack
