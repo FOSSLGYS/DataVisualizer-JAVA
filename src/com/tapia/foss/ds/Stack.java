@@ -57,16 +57,23 @@ public class Stack implements DataStructure {
     }
     
     /**
-     * POP method for Stack
+     * POP method for Stack 
      * @param ignore, required for consistency across data structures, unused here
      * @return a Boolean value to indicate whether the removal was successful or not
      */
     @Override
     public Boolean remove(Integer ignore)
     {
-        stack.remove(stack.get(size()-1));
-        return true;
+        // Nothing to remove from the stack
+        if (stack.isEmpty()) {
+            return false;
+        } else {
+            // We can remove stuff from the stack
+            stack.remove(stack.get(size()-1));
+            return true;
+        }
     }
+    
     
     /**
     *EMPTY the Stack
