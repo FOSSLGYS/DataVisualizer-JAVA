@@ -17,6 +17,7 @@
 package com.tapia.foss.ds;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -30,16 +31,18 @@ public class List implements DataStructure{
     
     public List()
     {
-        
+        list = new ArrayList<>(Utility.STEP_SIZE);
     }
     public void addRandomValues()
     {
-        
+        Random randomGenerator = new Random();
+        for(int i =0;i<Utility.STEP_SIZE;i++)
+            add(randomGenerator.nextInt(100));
     }
     
     public void add (Integer element)
     {
-        
+        list.add(element);
     }
     
     /**
