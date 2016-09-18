@@ -64,7 +64,6 @@ public class Selector extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DS Selector");
 
-        buttonGroupDS.add(jRadioButtonStack);
         jRadioButtonStack.setText("Stack");
         jRadioButtonStack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +71,6 @@ public class Selector extends javax.swing.JFrame {
             }
         });
 
-        buttonGroupDS.add(jRadioButtonQueue);
         jRadioButtonQueue.setText("Queue");
         jRadioButtonQueue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +78,6 @@ public class Selector extends javax.swing.JFrame {
             }
         });
 
-        buttonGroupDS.add(jRadioButtonHeap);
         jRadioButtonHeap.setText("Binary Heap");
         jRadioButtonHeap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +85,6 @@ public class Selector extends javax.swing.JFrame {
             }
         });
 
-        buttonGroupDS.add(jRadioButtonTree);
         jRadioButtonTree.setText("Binary Search Tree");
         jRadioButtonTree.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,7 +104,6 @@ public class Selector extends javax.swing.JFrame {
         jLabelPicture.setText("Data Structure");
         jLabelPicture.setToolTipText("Data Structure Image");
 
-        buttonGroupDS.add(jRadioButtonList);
         jRadioButtonList.setText("List");
         jRadioButtonList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
