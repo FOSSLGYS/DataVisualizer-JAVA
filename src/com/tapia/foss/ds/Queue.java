@@ -62,12 +62,8 @@ public class Queue implements DataStructure{
     @Override
     public Boolean remove(Integer ignore)
     {
-        if (queue.isEmpty()) {
-            return false;
-        } else {
-            queue.remove(0);
-            return true;
-        }
+        queue.remove(0);
+        return true;
     }
     
     /**

@@ -24,8 +24,6 @@ import javax.swing.JOptionPane;
  */
 public class Visualizer extends javax.swing.JFrame {
     
-    public static final String NON_INTEGER_INPUT_NOTIFICATION = "Please enter an integer value";
-    
     /**
      * Creates new form Visualizer
      */
@@ -217,14 +215,8 @@ public class Visualizer extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Please enter a value to be removed");
             else
             {
-                
-                if (this.isInteger(input)) {
-                    if(!structure.remove(Integer.parseInt(input))) {
-                        JOptionPane.showMessageDialog(this, "Unable to find/delete "+input);
-                    }
-                } else {
-                    JOptionPane.showMessageDialog(this, this.NON_INTEGER_INPUT_NOTIFICATION);
-                }
+                if(!structure.remove(Integer.parseInt(input)))
+                    JOptionPane.showMessageDialog(this, "Unable to find/delete "+input);
             
                 display();
             }
@@ -245,13 +237,7 @@ public class Visualizer extends javax.swing.JFrame {
         }
         else
         {
-            
-            if (this.isInteger(input)) {
-                structure.add(Integer.parseInt(input));
-            } else {
-                JOptionPane.showMessageDialog(this, NON_INTEGER_INPUT_NOTIFICATION);
-            }
-            
+            structure.add(Integer.parseInt(input));
             display();
         }
     }//GEN-LAST:event_jButtonAddActionPerformed
@@ -278,15 +264,6 @@ public class Visualizer extends javax.swing.JFrame {
         jTextAreaDisplay.setText(displayString);
         jPanelDisplayArea.validate();
 
-    }
-    
-    private boolean isInteger(String input) {
-        try {
-            Integer.parseInt(input);
-        } catch (NumberFormatException e) {
-            return false;
-        }
-        return true;
     }
     
     // Data Structure
