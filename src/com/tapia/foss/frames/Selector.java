@@ -65,6 +65,7 @@ public class Selector extends javax.swing.JFrame {
         setTitle("DS Selector");
 
         buttonGroupDS.add(jRadioButtonStack);
+        jRadioButtonStack.setSelected(true);
         jRadioButtonStack.setText("Stack");
         jRadioButtonStack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
