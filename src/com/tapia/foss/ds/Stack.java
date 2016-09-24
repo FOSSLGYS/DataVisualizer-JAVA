@@ -101,7 +101,7 @@ public class Stack implements DataStructure {
         {
             displayString+=stack.get(i);
             displayString+="\n";
-            displayString+=Utility.addSpaces(columns/2);
+            displayString+=Utility.addSpaces((columns/2) + 5);
         }
         
         return displayString;
